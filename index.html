@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bill Calculator</title>
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+    <h1>Simple Bill Calculator</h1>
+    <form class='calc-paid-form' id='form' action="">
+        <ul>
+            <li>
+                <label for="price">Enter Your Price Here($)</label>
+                <input id='price' type="number">
+            </li>
+            <li>
+                <label for="tip">Enter Your Tip Here(%)</label>
+                <input id='tip' type="number">
+            </li>
+            <li id="paid_window">
+                <label for="bill">Your Bill Is</label>
+                <p id="bill"></p>
+            </li>
+            <button type='submit' id="cash_btn">Calculate the Bill</button>
+        </ul>
+
+
+    </form>
+    <footer>
+        <p>Made by <a href="https://github.com/AlexHTML78">Me</a> in 2018 while learning JS</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
