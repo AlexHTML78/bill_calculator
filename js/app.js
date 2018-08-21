@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // adds sound after click on btn
     let cashSound = new Audio();
     cashSound.src = "../cash.wav";
+    cashSound.load();
     cashSound.play();
     // prevents page reload on submit
     document.getElementById("form").addEventListener("click", function(e) {
